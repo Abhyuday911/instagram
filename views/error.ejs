@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+</head>
+<style>
+  #slide1 {
+    position: relative;
+  }
+
+  #center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
+<body>
+  <div id="main">
+    <div id="slide1" class="slide">
+      <div id="center">
+        <h1 style="color: rgb(236, 236, 236);">TEZ CHAL RIYA, JADA TEZ ABHI MT CHAL, IS TEZI KE HISAB KA CODE LINKNE KA TIME NAHI MILA</h1>
+        <h2 style="color: rgb(206, 206, 206);">AB JA JAKE SERVER RESTART KR</h2>
+      </div>
+    </div>
+    <div class="slide">
+      <h1><%= message %></h1>
+      <h2><%= error.status %></h2>
+      <pre><%= error.stack %></pre>
+    </div>
+  </div>
+</body>
+
+</html>
+

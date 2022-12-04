@@ -1,0 +1,238 @@
+/* @font-face {
+    font-family: gilroy;
+    src: url(Gilroy-Regular.ttf)format("truetype");
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: gilroy; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(15, 18, 21);
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #444;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+}
+
+.slide {
+    min-height: 100%;
+    width: 100%;
+    background-color: #121212;
+}
+
+#nav {
+    width: 100%;
+    height: 9.6vh;
+    background-color: #000;
+    border-bottom: 1px solid #363636;
+    display: flex;
+    justify-content: center;
+}
+
+#navCenter {
+    width: 75%;
+    height: 100%;
+    padding-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+#navSvg {
+    display: block;
+    margin-right: 4px;
+}
+
+#navArrow {
+    color: rgba(255, 255, 255, 0.699);
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+#nleft {
+    display: flex;
+}
+
+#nright {
+    display: flex;
+}
+
+#nright a {
+    margin-right: 1.7vw;
+}
+
+#navCircle {
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 0.7vw;
+}
+
+#navCircle img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#ncenter {
+    width: 28%;
+    margin-right: 4%;
+    height: 63%;
+    background-color: #262626;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: rgb(250, 250, 250);
+    padding: 3px 16px;
+    padding-left: 4%;
+    background-image: url('/images/search_Icon.png');
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: 5% 50%;
+}
+
+#container {
+    width: 100%;
+    min-height: calc(100vh - 9.6vh);
+    padding: 0 12.7vw;
+    padding-top: 2.5vw;
+}
+
+#tagabout {
+    width: 100%;
+    height: 12vw;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    /* background-color: #222; */
+}
+
+#tagpic {
+    height: 12vw;
+    width: 12vw;
+    background-color: #555;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#tagpic img {
+    width: 100%;
+    height: auto;
+}
+
+#tagData {
+    width: calc(100vw - 25.4vw - 12vw);
+    height: 120px;
+    padding-left: 4.1vw;
+    color: rgb(235, 235, 235);
+}
+
+#tagData h1 {
+    font-size: 28px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+#tagData h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#tagData span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#tagData_Right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+#follow {
+    background-color: #0095F6;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    height: 33px;
+    border-radius: 6px;
+}
+
+#tagphotos {
+    margin-top: 45px;
+}
+
+#photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#tagphotos h4 {
+    color: #8E8E8E;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.photo {
+    height: 293px;
+    width: 293px;
+    background-color: #222;
+    color: rgba(255, 255, 255, 0.527);
+    margin-bottom: calc((100vw - 2*12.7vw - 3*293px)/2);
+}
+
+.photo img{
+    object-fit: cover;
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 16vh;
+}
